@@ -358,7 +358,6 @@ def make_cnn_model_classification(cnn_input_shape, n = 16):
 cnn_input_shape = (x_trn.shape[1], x_trn.shape[2], 1)
 clf_nn_model = make_cnn_model_classification(cnn_input_shape)
 
-# این قسمت تغییر کرده است
 accuracy, training_time,f1 = evaluate_classification_cnn_model(clf_nn_model, x_trn, y_trn, x_val, y_val, x_tst, y_tst)
 print('Accuracy : ', accuracy,'F1 : ',f1, ' Time :', training_time) #need to save in a file
 
