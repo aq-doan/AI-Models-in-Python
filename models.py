@@ -41,28 +41,6 @@ import tensorflow as tf
 
 import warnings
 warnings.filterwarnings('ignore')
-
-#import by Anh
-import os
-from tqdm import tqdm
-import math
-from sklearn.model_selection import train_test_split
-from sklearn import metrics
-from sklearn.model_selection import StratifiedKFold
-from sklearn.metrics import roc_auc_score
-
-from keras.preprocessing.text import Tokenizer
-from keras.layers import Dense, Input, CuDNNLSTM, Embedding, Dropout, Activation, CuDNNGRU, Conv1D
-from keras.layers import Bidirectional, GlobalMaxPool1D, GlobalMaxPooling1D, GlobalAveragePooling1D
-from keras.layers import Input, Embedding, Dense, MaxPool2D, concatenate
-from keras.layers import Reshape, Flatten, Concatenate, Dropout, SpatialDropout1D
-from keras.optimizers import Adam
-from keras.models import Model
-from keras import backend as K
-
-from keras import initializers, regularizers, constraints, optimizers, layers
-from keras.layers import concatenate
-from keras.callbacks import *
 def rmse(y_test, pred):
   return np.sqrt(mse(y_test,pred))
 
